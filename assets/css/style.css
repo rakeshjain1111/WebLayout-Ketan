@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;;
+}
+
+/* Univesal CSS start */
+  .text-orange{color:#ea512e}
+  .text-black{color:#1b0238}
+  .text-silver{color:#6b6b84}
+  .bg-orange{background: ea512e}
+  .bg-yellow{background:#f5890d}
+  .btn{
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    background:#ea512e;
+    position: relative;
+    transition: 0.5s ease;
+  }
+
+  .btn:hover{
+    color: #FFF;
+    background-color: #f5890d;
+    
+  }
+/* Univesal CSS end */
+
