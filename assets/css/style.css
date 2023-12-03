@@ -1,16 +1,20 @@
-*{
+  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+  *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: none;;
+    border: none;
+    font-family:"Catamaran" ,sans-serif ;
 }
 
-/* Univesal CSS start */
+/*------------ Univesal CSS start --------------*/
+
   .text-orange{color:#ea512e}
-  .text-black{color:#1b0238}
+  .text-dark-blue{color: #1B0238;}
   .text-silver{color:#6b6b84}
-  .bg-orange{background: ea512e}
-  .bg-yellow{background:#f5890d}
+  .bg-orange{background: #ea512e}
+  .bg-yellow{background:#f5890d !important; }
   .btn{
     color: #fff;
     display: inline-block;
@@ -28,5 +32,162 @@
     background-color: #f5890d;
     
   }
-/* Univesal CSS end */
 
+  .mt-6{margin-top: 60px;}
+  .mt-7{margin-top: 70px;}
+  .mt-8{margin-top: 80px;}
+  .mt-9{margin-top: 90px;}
+  .mt-10{margin-top: 100px;}
+  .mt-15{margin-top: 150px;}
+  .mt-20{margin-top: 200px;}
+  .ms-15{margin-left: 100px;}
+
+   .w-18{width: 180px !important;}
+
+  p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      color: #6b6b84;
+      font-weight: 400;
+      font-family: "Roboto",sans-serif;
+      font-size: 16px;
+  }
+/*----------- Univesal CSS end------------*/
+
+  /*---------------- header section start -----------------*/
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 6px 0.5px rgb(180, 178, 178);
+  }
+
+  .navbar .navbar-nav .nav-item a{
+            color:#1b0238;
+            font-size: 16px;
+            font-weight: 600;
+            font-family:"Roboto" ,sans-serif ;
+  }
+
+  .nav-item a:hover{
+    color: #ea512e !important;
+  }
+  
+  .nav-item{
+    transition: color .15s ease-in-out;    
+  }
+  .navbar .dropdown:hover .dropdown-menu{
+    display: block;
+  }
+
+  .dropdown-menu{
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: 0px 5px 12px 0px rgb(184, 181, 181);
+    line-height: 39px;
+    width: 280px;
+    animation: up linear 0.3s;
+  }
+
+  .flip{
+    animation:flip 1.5s ease;
+  }
+  
+  /* header section end */
+
+  /* banner section start */
+
+  .banner{
+    background: url(../img/main-banner-bg.jpg);
+    min-height: 700px;
+    width: 100%;
+    background-size: 100% 100%;
+    margin-top: 80px;
+  }
+
+  .banner .cloud{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .banner h1{
+     font-weight: 600;
+     font-size: 60px;
+  }
+  
+.btn1:hover{
+  background: #ea512e !important;
+}
+
+  .banner-shape{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .banner-shape2{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .banner-shape img{
+    width: 100px;
+    position: relative;
+    animation: move 2s linear alternate infinite;
+  }
+
+  .shape-3 {
+    width: 100px;
+    position: relative;
+    top: -30px;
+    animation: move 2s linear alternate infinite;
+  }
+
+  .shape-4{
+    width: 100px;
+    position: relative;
+    bottom: -50px;
+    animation: move2 2s linear alternate infinite;
+  }
+
+  /* banner section end */
+
+
+  /* who we are section start */
+     
+  /* who we are section end */
+
+  @keyframes up {
+    0%{
+       translate: 0px 10px;
+       opacity: 30%;
+    }
+    100%{
+       translate:  0px 0px;
+    }
+  }
+
+
+  @keyframes flip {
+    from{
+      transform: rotateY(90deg);
+    }to{
+      transform: rotateY(0deg);
+    } 
+   }
+
+
+  @keyframes move {
+    0%{ left: 0px;}
+    100%{left: 50px ;}
+  }
+
+  @keyframes move2{
+    0%{ bottom: -80px;}
+    100%{bottom: -100px ;}
+  }
