@@ -59,7 +59,7 @@
   .navbar {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     background: #fff;
     width: 100%;
     box-shadow: 0px 0px 6px 0.5px rgb(180, 178, 178);
@@ -159,7 +159,52 @@
 
 
   /* who we are section start */
-     
+     .who-image{
+      text-align: center;
+      position: relative;
+      z-index: 1;
+     }
+
+     .who-image img{
+      padding: 20px;
+     }
+
+     .who .who-image::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #ea512e;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      border-radius: 50%;
+      transition: 0.5s;
+      animation: border-transform-default 10s linear infinite alternate forwards;;
+     }
+
+     .who .who-image::after{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #f5890d;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      border-radius: 50%;
+      transition: 0.5s;
+      animation: border-transform-default 30s linear infinite alternate forwards;;
+     }
+
+     .who .content span{
+      font-size: 20px;
+      color: #ea512e;
+      font-weight: 600;
+      font-family: "Sacramento", cursive;;
+     }
   /* who we are section end */
 
   @keyframes up {
@@ -191,3 +236,27 @@
     0%{ bottom: -80px;}
     100%{bottom: -100px ;}
   }
+
+  @keyframes border-transform-default {
+    0%, 100% {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    }
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+}
