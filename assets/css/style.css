@@ -1,4 +1,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Poppins&family=Sacramento&display=swap');
+
 
   *{
     margin: 0px;
@@ -203,7 +205,47 @@
       font-size: 20px;
       color: #ea512e;
       font-weight: 600;
-      font-family: "Sacramento", cursive;;
+      font-family: "Sacramento", cursive;
+     }
+
+     .who .content h3{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 45px;
+      font-weight: bold;
+      color: #1B0238;
+     }
+
+     .who  ul li{
+         line-height: 40px;
+         font-size: 16px;
+         font-weight: bold;
+     }
+
+     .who .who-list li span{
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       background: #ea512e;
+       display: inline-block;
+       font-size: 14px;
+       color: #fff;
+       text-align: center;
+       line-height: 30px;
+       margin-right: 6px;
+       font-family:"Catamaran" ,sans-serif;
+       transition: all 0.5s;
+     }
+
+
+     .who .who-list li:hover span{
+      background: #f5890d;
+      transition: all 1s ease-in;
+     }
+
+     .who-shape{
+      max-width: 120px;
+      animation: move 2s linear alternate infinite;
      }
   /* who we are section end */
 
