@@ -244,8 +244,16 @@
      }
 
      .who-shape{
+      position: absolute;
+      top: 20px;
+      right:5% !important;
       max-width: 120px;
-      animation: move 2s linear alternate infinite;
+      animation: move3 2s linear  infinite;
+     }
+
+     .who-shape img{
+        height: auto;
+        display: inline-block;
      }
   /* who we are section end */
 
@@ -272,6 +280,12 @@
   @keyframes move {
     0%{ left: 0px;}
     100%{left: 50px ;}
+  }
+
+  @keyframes move3 {
+    0%{ transform: translateX(0px);}
+    50%{transform: translateX(20px);}
+    100%{transform: translateX(0px);}
   }
 
   @keyframes move2{
