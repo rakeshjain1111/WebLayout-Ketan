@@ -201,14 +201,14 @@
       animation: border-transform-default 30s linear infinite alternate forwards;;
      }
 
-     .who .content span{
+     .who .content span, .classes span{
       font-size: 20px;
       color: #ea512e;
       font-weight: 600;
       font-family: "Sacramento", cursive;
      }
 
-     .who .content h3{
+     .who .content h3, .classes h3{
       margin-top: 20px;
       margin-bottom: 20px;
       font-size: 45px;
@@ -217,9 +217,9 @@
      }
 
      .who  ul li{
-         line-height: 40px;
-         font-size: 16px;
-         font-weight: bold;
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: bold;
      }
 
      .who .who-list li span{
@@ -256,42 +256,106 @@
         display: inline-block;
      }
   /* who we are section end */
+     
+  /* classes section start */
+     .classes{
+      background: #fdf6ed;
+      padding-top: 100px;
+      padding-bottom: 70px;
+      position: relative;
+      z-index: 1;
+     }
+
+     .card .card-img{
+      background: #fff;
+      position: relative;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 2px 28px 0 rgb(0, 0, 9%);
+     }
+     
+     .card .card-body h3{
+      font-size: 25px;
+      margin-bottom: 15px;
+     }
+
+     .card .card-body p{
+      font-size: 15px;
+      line-height: 1.8;
+     }
+
+     .card .card-body .line{
+      border-bottom: 2px dashed #ea512e;
+     }
+      
+     .card .card-body ul li{
+      padding-right: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "Roboto",sans-serif;
+     }
+
+     .card .card-body span{
+      color: #f5890d;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "Roboto",sans-serif;
+     }
+  
+     
+     .card .card-img img{
+      transition: all 0.5s ease;
+     }
+     
+     .classes .card:hover img{
+      transform: scale(1.2)rotate(3deg);
+     }
+
+     .classes .card:hover .price{
+      background: #f5890d;
+      transition: all 0.3s ease;
+     }
+
+     .classes .card:hover h3 a{
+      color: #f5890d !important;
+      transition: all 0.3s ease;
+     }
+  /* classes section end */
 
   @keyframes up {
-    0%{
-       translate: 0px 10px;
-       opacity: 30%;
+      0%{
+        translate: 0px 10px;
+        opacity: 30%;
+      }
+      100%{
+        translate:  0px 0px;
+      }
     }
-    100%{
-       translate:  0px 0px;
-    }
-  }
 
 
   @keyframes flip {
-    from{
-      transform: rotateY(90deg);
-    }to{
-      transform: rotateY(0deg);
-    } 
-   }
+      from{
+        transform: rotateY(90deg);
+      }to{
+        transform: rotateY(0deg);
+      } 
+    }
 
 
   @keyframes move {
-    0%{ left: 0px;}
-    100%{left: 50px ;}
-  }
+      0%{ left: 0px;}
+      100%{left: 50px ;}
+    }
 
   @keyframes move3 {
-    0%{ transform: translateX(0px);}
-    50%{transform: translateX(20px);}
-    100%{transform: translateX(0px);}
-  }
+      0%{ transform: translateX(0px);}
+      50%{transform: translateX(20px);}
+      100%{transform: translateX(0px);}
+   }
 
   @keyframes move2{
-    0%{ bottom: -80px;}
-    100%{bottom: -100px ;}
-  }
+      0%{ bottom: -80px;}
+      100%{bottom: -100px ;}
+    }
 
   @keyframes border-transform-default {
     0%, 100% {
