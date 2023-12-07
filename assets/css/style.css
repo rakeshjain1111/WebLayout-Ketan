@@ -43,6 +43,10 @@
   .mt-15{margin-top: 150px;}
   .mt-20{margin-top: 200px;}
   .ms-15{margin-left: 100px;}
+  .ptb-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
    .w-18{width: 180px !important;}
 
@@ -201,14 +205,14 @@
       animation: border-transform-default 30s linear infinite alternate forwards;;
      }
 
-     .who .content span, .classes span{
+     .who .content span, .classes span, .value span{
       font-size: 20px;
       color: #ea512e;
       font-weight: 600;
       font-family: "Sacramento", cursive;
      }
 
-     .who .content h3, .classes h3{
+     .who .content h3, .classes h3, .value h3{
       margin-top: 20px;
       margin-bottom: 20px;
       font-size: 45px;
@@ -324,8 +328,40 @@
 
 
   /* value section start */
+     .value .number{
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: 1%;
+      margin-right: 20px;
+      color: #1b0238;
+      border: 3px solid #fff;
+      outline: 1px solid #e5e4e4;
+      outline-offset: 2px;
+      transition: 0.5s;
+      cursor: pointer;
+      font-family:"Catamaran" ,sans-serif ;
+    }
 
-  
+    .value .number:hover{
+      background:#f5890d !important;
+      outline-color: #f5890d;
+      color: #fff;
+      transition: 0.5s;
+      z-index: 1;
+    }
+
+    .value .value-content h4{
+      color: #1B0238;
+      font-size: 25px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family:"Catamaran" ,sans-serif ;
+    }
+
   /* value section end */
 
   @keyframes up {
