@@ -43,10 +43,10 @@
   .mt-15{margin-top: 150px;}
   .mt-20{margin-top: 200px;}
   .ms-15{margin-left: 100px;}
-  .ptb-100{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+
+  .pt-100{padding-top: 100px;}
+  .pb-100{padding-bottom: 100px;}
+  .pb-70{padding-bottom: 70px;}
 
    .w-18{width: 180px !important;}
 
@@ -57,6 +57,13 @@
       font-weight: 400;
       font-family: "Roboto",sans-serif;
       font-size: 16px;
+  }
+
+  .title{
+    font-size: 20px;
+      color: #ea512e;
+      font-weight: 600;
+      font-family: "Sacramento", cursive;
   }
 /*----------- Univesal CSS end------------*/
 
@@ -205,13 +212,6 @@
       animation: border-transform-default 30s linear infinite alternate forwards;;
      }
 
-     .who .content span, .classes span, .value span{
-      font-size: 20px;
-      color: #ea512e;
-      font-weight: 600;
-      font-family: "Sacramento", cursive;
-     }
-
      .who .content h3, .classes h3, .value h3{
       margin-top: 20px;
       margin-bottom: 20px;
@@ -264,8 +264,6 @@
   /* classes section start */
      .classes{
       background: #fdf6ed;
-      padding-top: 100px;
-      padding-bottom: 70px;
       position: relative;
       z-index: 1;
      }
@@ -363,6 +361,61 @@
     }
 
   /* value section end */
+  /* Teacher section start */
+     .teacher{
+      background: url(../img/teacher-bg.jpg);
+      background-size: 100% 100%;
+      z-index: -9 !important;
+     }
+
+     .teacher h2{
+        font-size: 45px;
+        font-weight: bold;
+        margin-top: 15px;
+     }
+      .teacher .teacher-img{
+        z-index: 9 !important;
+      }
+     .teacher .social-media{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: -50px;
+      transition: all 0.5s ease-in;
+     }
+
+     .teacher .teacher-img:hover .social-media{
+      margin-bottom: 15px;
+      transition: all 0.5s ease-out;
+     }
+
+     .teacher .social-media ul li{
+        background: #ea512e;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        line-height: 33px;
+     }
+     
+     .teacher .teacher-img::before{
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: #ea512e;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      border-radius: 50%;
+      transition: 0.5s;
+      animation: border-transform-default 20s linear infinite alternate forwards;
+     }
+
+  /* Teacher section end */
 
   @keyframes up {
       0%{
