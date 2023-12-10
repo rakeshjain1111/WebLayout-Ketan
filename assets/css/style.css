@@ -424,7 +424,7 @@
     z-index: -9 !important;
   }
 
-  .teacher h2 {
+  .teacher h2, .event h2{
     font-size: 45px;
     font-weight: bold;
     margin-top: 15px;
@@ -475,31 +475,11 @@
 
   /* Teacher section end */
   /* Testimonial section start */
-  /* .testimonial .slider-wrap {
-    overflow-x: hidden;
-    height: 200px;
+  .testimonial{
+    width: 100%;
+    height: 800px;
+    position: relative;
   }
-
-  .slider-main {
-    align-items: center;
-    justify-content: center;
-    width: 300%;
-  }
-
-  .testimonial .slider-main .item {
-    display: inline-block;
-  }
-
-  .item .card {
-    width: 430px;
-    height: 200px;
-    border-radius: 50%;
-  }
-
-  .nav-button {
-    display: flex;
-    justify-content: space-between;
-  } */
 
   .testimonial .slider-wrap .slider-main{
     overflow-x: hidden;
@@ -525,6 +505,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    color: #ea512e;
     background: #fff;
     text-align: center;
     line-height: 65px;
@@ -554,13 +535,50 @@
     transition: all 0.5s ease-out;
   }
   
-  .testimonial .card:hover .qoute i{
-    color: #fff;
+  .testimonial .card:hover .qoute{
+    color: #fff !important;
     background: #ea512e !important;
   }
   
+  .testimonial .slider-wrap{
+   
+  }
 
   /* Testimonial section end */
+  /* event section start */
+
+   .event{
+    background: url(../img/event-bg.jpg);
+    min-height: 800px;
+    max-height: auto;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+   }
+   
+   .event .event-box{
+   padding: 20px;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   background: #fff;
+   }
+   
+   .event .event-list{
+    margin-top: 50px;
+   }
+
+   .event .event-list time, address{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    display: block;
+    margin-bottom: 10px;
+   }
+  /* event section end */
+
 
 
 
