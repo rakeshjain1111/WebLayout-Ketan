@@ -901,3 +901,43 @@
       display: none;
     }
   }
+
+  /* ============================about page CSS start============================ */
+        .about-banner{
+          background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/about-img/page-banner-1.jpg);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding-top: 200px;
+          padding-bottom: 200px;
+          background-attachment: fixed;
+        }
+
+        .learn ul li {
+          line-height: 40px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      
+        .learn .learn-list li span {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: #ea512e;
+          display: inline-block;
+          font-size: 14px;
+          color: #fff;
+          text-align: center;
+          line-height: 30px;
+          margin-right: 6px;
+          font-family: "Catamaran", sans-serif;
+          transition: all 0.5s;
+        }
+      
+      
+        .learn .learn-list li:hover span {
+          background: #f5890d;
+          transition: all 1s ease-in;
+        }
+
+  /* ============================about page CSS end============================ */
