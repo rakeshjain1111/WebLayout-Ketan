@@ -903,6 +903,10 @@
   }
 
   /* ============================about page CSS start============================ */
+
+
+        /* about banner section start */
+  
         .about-banner{
           background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/about-img/page-banner-1.jpg);
           background-position: center center;
@@ -912,6 +916,10 @@
           padding-bottom: 200px;
           background-attachment: fixed;
         }
+
+        /* about banner section end */
+        /* learn section start */
+        /* learn section end */
 
         .learn ul li {
           line-height: 40px;
@@ -940,4 +948,82 @@
           transition: all 1s ease-in;
         }
 
+       /* learn section end */
+
+       /* teacher section start */
+        .image img{
+          border-radius: 15px !important;
+        }
+
+        .teacher-item .image .content{
+          position: absolute;
+          top: 60%;
+          left: 0px;
+          right: 0px;
+          opacity: 0;
+          margin-top: 10px;
+          transform: translateY(-50%);
+          transition: all 0.5s ease;
+          border-radius: 15px !important;
+          z-index: 1;
+        }
+
+        .teacher-item .image .content ul li a{
+          display: block;
+          background: #fff;
+          width: 40px;
+          height: 40px;
+          line-height: 30px;
+          border-radius: 50%;
+          padding: 8px;
+          margin-right: 15px;
+          font-size: 22px;
+          text-align: center;
+          transition: all 0.5s ease-in;
+        }
+
+        .image:hover .content{
+            position: absolute;
+            top: 50%;
+            opacity: 1;
+        }
+
+        .image:hover::after .content{
+          opacity: .70; 
+         }
+
+        .image:hover::after{
+          opacity: .70;
+          visibility: visible;
+        }
+
+        .image:hover::after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          background-color: #000;
+          transition: .5s ease-in-out;
+          border-radius: 15px !important;
+        }
+        
+     /* teacher section end */
+
+        /* preloader section start */
+        #preloader{
+          background: #000000fb url(../img/loader2.gif);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 15%;
+          height: 100vh;
+          width: 100%;
+          position: fixed;
+          z-index: 100;
+        }
+        /* preloader section end */
+
+
   /* ============================about page CSS end============================ */
+  
