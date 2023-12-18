@@ -1011,19 +1011,42 @@
         
      /* teacher section end */
 
-        /* preloader section start */
-        #preloader{
-          background: #000000fb url(../img/loader2.gif);
-          background-repeat: no-repeat;
+     /* qoute section start */
+        .quote{
+          background: url(../img/about-img/quote-bg.jpg);
           background-position: center center;
-          background-size: 15%;
-          height: 100vh;
-          width: 100%;
-          position: fixed;
-          z-index: 100;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
         }
-        /* preloader section end */
+     /* qoute section end */
+     /* courses section start */
+        .courses .shapes .s-3{
+          bottom: 10%;
+          left: 10%;
+        }
+
+        .courses .shapes img{
+          animation: move 3s linear  infinite;
+        
+        }
+
+     /* courses section end */
+
+       
 
 
   /* ============================about page CSS end============================ */
   
+   /* preloader section start */
+   #preloader{
+    background: #000000fb url(../img/loader2.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  /* preloader section end */
