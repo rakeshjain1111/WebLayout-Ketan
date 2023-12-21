@@ -1028,10 +1028,32 @@
 
         .courses .shapes img{
           animation: move 3s linear  infinite;
-        
         }
 
+
      /* courses section end */
+     /*feedback section start */
+     
+     .feedback{
+      background: #fef3e6;
+    }
+
+    .feedback .slider{
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+
+    .feedback .slider .slide{
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+
+
+     /* feedback section end */
 
        
 
